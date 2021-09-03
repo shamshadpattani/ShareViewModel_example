@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Hope Test</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="view_user_details">View User Details</string>
+    <string name="address_heading_name">Address:</string>
+    <string name="done_btn_text">Done</string>
+
+    <string name="no_net">No Internet</string>
+    <string name="back_net">Back Online</string>
+</resources>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserDetailsFragment">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="100dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="@dimen/double_margin"
+        app:cardBackgroundColor="@color/light_grey_color"
+        app:cardCornerRadius="@dimen/element_spacing"
+        app:cardPreventCornerOverlap="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guideline2">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageUser"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15142271" />
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageRest"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/ic_refresh_24"
+        android:padding="@dimen/line_spacing"
+        app:layout_constraintBottom_toTopOf="@id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="@dimen/element_spacing"
+        android:scaleType="fitXY" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/user_id"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        style="@style/TextAppearance.Hope.Body"
+        android:layout_marginStart="@dimen/element_spacing"
+        app:layout_constraintStart_toEndOf="@id/cardView3"
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        tools:text="User ID" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        style="@style/TextAppearance.Hope.Body"
+        android:layout_marginStart="@dimen/element_spacing"
+        android:layout_marginTop="@dimen/line_spacing"
+        app:layout_constraintStart_toEndOf="@id/cardView3"
+        app:layout_constraintTop_toBottomOf="@id/user_id"
+        tools:text="User Name" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/user_dob"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        style="@style/TextAppearance.Hope.Body"
+        android:layout_marginStart="@dimen/element_spacing"
+        android:layout_marginTop="@dimen/line_spacing"
+        app:layout_constraintStart_toEndOf="@id/cardView3"
+        app:layout_constraintTop_toBottomOf="@id/user_name"
+        tools:text="DOB" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/user_email"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        style="@style/TextAppearance.Hope.Body"
+        android:layout_marginStart="@dimen/element_spacing"
+        android:layout_marginTop="@dimen/line_spacing"
+        app:layout_constraintStart_toEndOf="@id/cardView3"
+        app:layout_constraintTop_toBottomOf="@id/user_dob"
+        tools:text="Email" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/detailsBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/double_margin"
+        android:layout_marginTop="@dimen/double_margin"
+        android:layout_marginEnd="@dimen/double_margin"
+        android:text="@string/view_user_details"
+        android:textAllCaps="true"
+        android:textColor="@color/colorInfoDark"
+        app:backgroundTint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
